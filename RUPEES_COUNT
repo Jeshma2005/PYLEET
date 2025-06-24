@@ -1,0 +1,5 @@
+a=int(input("Enter the amount in Rupees:"))
+for digits in [500,200,100,50, 20, 10,5, 2, 1]:
+    while a >= digits:
+        print(digits, end=' ')
+        a=a- digits
