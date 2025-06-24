@@ -1,0 +1,13 @@
+title=["Name","Age","Department"]
+data=[
+    ["fgh","gvhbjn","fcgvhj"],
+    ["bhn","vbn","gvhjk"],
+    ["cgvbhjn","vbn","sdgvhbjn"],
+    ["cvbn","xc ","vgbnm,"],
+    ["cghj","fghjk","gvhjk"]
+    ]
+print(f"{title[0]:<10}{title[1]:<5}{title[2]:10}")
+print("-"*25)
+for i in data:
+        print(f"{i[0]:<10}{i[1]:<5}{i[2]:10}")
+        print("-"*25)
