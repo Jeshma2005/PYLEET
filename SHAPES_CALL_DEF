@@ -1,0 +1,41 @@
+def circle():
+    r = int(input("Enter the radius: "))
+    print("Area of circle:", 3.14 * r * r)
+
+def square(a):
+    print("Area of square:", a * a)
+
+def rectangle():
+    l = int(input("Enter the length: "))
+    b = int(input("Enter the breadth: "))
+    return l * b
+
+def triangle(a, b):
+    return 0.5 * a * b
+
+while True:
+    print("\n----- AREA CALCULATOR -----")
+    print("1. CIRCLE")
+    print("2. SQUARE")
+    print("3. RECTANGLE")
+    print("4. TRIANGLE")
+
+    ch = int(input("Enter your choice: "))
+
+    match ch:
+        case 1:
+            circle()
+        case 2:
+            a = int(input("Enter the side of the square: "))
+            square(a)
+        case 3:
+            res = rectangle()
+            print("Area of the rectangle:", res)
+        case 4:
+            l = int(input("Enter the base of the triangle: "))
+            b = int(input("Enter the height of the triangle: "))
+            res1 = triangle(l, b)
+            print("Area of Triangle:", res1)
+        case _:
+            break
+       
