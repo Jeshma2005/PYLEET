@@ -1,0 +1,11 @@
+import math
+def gcd(a,b):
+   return math.gcd(a,b)==1
+
+a=int(input("Enter any num: "))
+for i in range(1,a):
+        for j in range(1,i):
+          for k in range(1,j):
+            if(j*j + k*k==i*i):
+             if (gcd(k,j)==1 and gcd(j,i)==1 and gcd(k,i)==1):
+              print(k,j,i)
