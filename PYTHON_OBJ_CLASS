@@ -1,0 +1,7 @@
+class animal:
+    def sound(self):
+        print("All animal makes sound!!")
+a=animal() #oject creation
+a.sound()
+
+
