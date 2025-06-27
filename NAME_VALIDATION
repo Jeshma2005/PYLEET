@@ -1,0 +1,22 @@
+import difflib
+
+# Step 1: Get 5 names
+valid_names = []
+print("Enter 5 names:")
+for i in range(5):
+    name = input(f"Name {i+1}: ").strip()
+    valid_names.append(name)
+
+# Step 2: Ask for the word to validate
+word = input("Enter your word: ").strip()
+
+# Step 3: Check for match or suggest
+if word in valid_names:
+    print(f'"{word}" is a valid name.')
+else:
+    # Find the closest match
+    suggestion = difflib.get_close_matches(word, valid_names, n=1)
+    if suggestion:
+        print(f'Did you mean "{suggestion[0]}" ?')
+    else:
+        print("No close match found.")
