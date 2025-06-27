@@ -1,0 +1,15 @@
+#1
+file=open("DAY7.txt","w")
+file.write("Hi Myself Jeshma")
+file.close()
+print("Doneyyyyyyyyyyyyyyyyyy")
+
+
+
+
+#2
+file=open("TRIALfile handling.txt","r")
+data=file.readlines()
+for i in data:
+    word=i.split()
+    print(word)
