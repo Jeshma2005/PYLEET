@@ -1,0 +1,28 @@
+def prime_factors(n):
+    factors = []
+    # Check for 2 first
+    while n % 2 == 0:
+        factors.append(2)
+        n //= 2
+
+    # Check for odd numbers from 3 to √n
+    i = 3
+    while i * i <= n:
+        while n % i == 0:
+            factors.append(i)
+            n //= i
+        i += 2
+
+    # If n is still greater than 2, it's a prime
+    if n > 2:
+        factors.append(n)
+
+    return factors
+
+# Input
+num = int(input("Enter a number: "))
+if num <= 1:
+    print("Enter a number greater than 1.")
+else:
+    result = prime_factors(num)
+    print("Prime factors of", num, "are:", result)
