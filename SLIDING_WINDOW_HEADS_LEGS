@@ -1,0 +1,14 @@
+h = int(input("Enter total number of heads: "))
+l = int(input("Enter total number of legs: "))
+flag = False
+
+for i in range(h + 1): 
+    j = h - i           
+    if (j * 4 + i * 2 == l):
+        flag = True
+        break
+
+if flag:
+    print(i, j)
+else:
+    print("No solution")
