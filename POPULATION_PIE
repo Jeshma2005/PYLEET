@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_excel("C:\\Users\\Jesh\\Downloads\\population.xlsx")
+
+# Extract relevant columns
+country = data['Country Name']
+population = data['Population']
+
+# Plot pie chart
+plt.figure(figsize=(12, 12))
+plt.pie(population, labels=country,autopct='%0.1f%%', startangle=140,)
+plt.title("Countrywise Population 2008 (in Crores)")
+plt.axis('equal')
+plt.show()
