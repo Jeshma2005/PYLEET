@@ -10,7 +10,7 @@ for i in  range(n-1):
         for k in range(meet):
             matches.append([teams[i],teams[j]])
 random.shuffle(matches)
-no=0
+no=1
 for i in matches:
     print("Matvh number:",no,":",i[0],"vs",i[1])
     no=no+1
